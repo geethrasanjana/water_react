@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 15px 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.greeting {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date-time {
+  text-align: right;
+}
+
+.date {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.time {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+/* Navigate Button */
+.navigate-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: none;
+  transition: 0.3s;
+}
+
+.navigate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 80%;
+}
+
+/* Card Styles */
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Digital Meter Styles */
+.digital-meter {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  color: #00ff00;
+  text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+}
+
+/* Charts */
+.chart-card {
+  grid-column: span 2;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.3);
+}
+
+/* Tank Receiver Gate */
+.gate-card {
+  font-size: 24px;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.gate-on {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.gate-off {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Water Flow Rate */
+.flow-card {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.flow-rate {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Gate Open Level */
+.gate-open-card {
+  background-color: #ff9900;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.3);
+}
+
+.gate-level {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Loading Text */
+.loading-text {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    width: 95%;
+  }
+
+  .chart-card {
+    grid-column: span 1;
+  }
+}
